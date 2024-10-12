@@ -4,39 +4,32 @@
 template <typename T>
 class BaseNode abstract
 {
-protected:
-	T _value;
 public:
-	BaseNode() = default;
-	BaseNode(T value) : _value(value) {}
 	virtual ~BaseNode() = default;
 	virtual void setValue(T value) = 0;
-	virtual T getValue() = 0;
+	virtual T getValue() const = 0;
 };
 
 template <typename T>
 class INext abstract
 {	
 public:
-	BaseNode<T>* _next = nullptr;
-	INext() = default;
-	INext(BaseNode<T>* next) : _next(next) {}
 	virtual ~INext() = default;
-	virtual BaseNode<T>* getNext() = 0;
-	virtual void setNext(BaseNode<T>* next) = 0;
+	virtual INext<T>* getNext() const = 0;
+	virtual void setNext(INext<T>* next) = 0;
 };
 
-template <typename T>
-class IPrev abstract
-{
-public:
-	BaseNode<T>* _prev = nullptr;
-	IPrev() = default;
-	IPrev(BaseNode<T>* prev) : _prev(prev) {}
-	virtual ~IPrev() = default;
-	virtual BaseNode<T>* getPrev() = 0;
-	virtual void setPrev(BaseNode<T>* next) = 0;
-};
+//template <typename T>
+//class IPrev abstract
+//{
+//public:
+//	IPrev* _prev = nullptr;
+//	IPrev() = default;
+//	IPrev(IPrev* prev) : _prev(prev) {}
+//	virtual ~IPrev() = default;
+//	virtual IPrev* getPrev() = 0;
+//	virtual void setPrev(IPrev* next) = 0;
+//};
 
 #endif // !BASE_NODE
 
