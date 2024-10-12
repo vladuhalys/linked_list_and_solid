@@ -7,8 +7,8 @@ template <typename T>
 class SoloLinkedList : public BaseLinkedList<T>
 {
 protected:
-	SoloLinkedListNode<T>* _head = nullptr;
-	SoloLinkedListNode<T>* _tail = nullptr;
+	BaseSoloLinkedListNode<T>* _head = nullptr;
+	BaseSoloLinkedListNode<T>* _tail = nullptr;
 public:
 	SoloLinkedList()
 	{
@@ -30,7 +30,7 @@ public:
 	//From BaseAddingOperations
 	void push_back(T value) override
 	{
-		SoloLinkedListNode<T>* newNode = new SoloLinkedListNode<T>(value);
+		BaseSoloLinkedListNode<T>* newNode = new SoloLinkedListNode(value);
 		if (this->_head == nullptr)
 		{
 			this->_head = newNode;
@@ -45,7 +45,7 @@ public:
 	 
 	void push_front(T value) override
 	{
-		SoloLinkedListNode<T>* newNode = new SoloLinkedListNode<T>(value);
+		BaseSoloLinkedListNode<T>* newNode = new SoloLinkedListNode(value);
 		if (this->_head == nullptr)
 		{
 			this->_head = newNode;
@@ -60,9 +60,9 @@ public:
 
 	void insert(T value, size_t index) override
 	{
-		SoloLinkedListNode<T>* newNode = new SoloLinkedListNode<T>(value);
-		SoloLinkedListNode<T>* current = this->_head;
-		SoloLinkedListNode<T>* previous = nullptr;
+		BaseSoloLinkedListNode<T>* newNode = new SoloLinkedListNode<T>(value);
+		BaseSoloLinkedListNode<T>* current = this->_head;
+		BaseSoloLinkedListNode<T>* previous = nullptr;
 		size_t i = 0;
 		while (current != nullptr && i < index)
 		{
@@ -94,7 +94,7 @@ public:
 		{
 			return;
 		}
-		SoloLinkedListNode<T>* temp = this->_head;
+		BaseSoloLinkedListNode<T>* temp = this->_head;
 		this->_head = this->_head->getNext();
 		temp->setNext(nullptr);
 		delete temp;
@@ -106,8 +106,8 @@ public:
 		{
 			return;
 		}
-		SoloLinkedListNode<T>* current = this->_head;
-		SoloLinkedListNode<T>* previous = nullptr;
+		BaseSoloLinkedListNode<T>* current = this->_head;
+		BaseSoloLinkedListNode<T>* previous = nullptr;
 		while (current->getNext() != nullptr)
 		{
 			previous = current;
@@ -128,8 +128,8 @@ public:
 
 	void erase(size_t index) override
 	{
-		SoloLinkedListNode<T>* current = this->_head;
-		SoloLinkedListNode<T>* previous = nullptr;
+		BaseSoloLinkedListNode<T>* current = this->_head;
+		BaseSoloLinkedListNode<T>* previous = nullptr;
 		size_t i = 0;
 		while (current != nullptr && i < index)
 		{
@@ -157,8 +157,8 @@ public:
 
 	void remove(T value) override
 	{
-		SoloLinkedListNode<T>* current = this->_head;
-		SoloLinkedListNode<T>* previous = nullptr;
+		BaseSoloLinkedListNode<T>* current = this->_head;
+		BaseSoloLinkedListNode<T>* previous = nullptr;
 		while (current != nullptr && current->getValue() != value)
 		{
 			previous = current;
@@ -183,22 +183,22 @@ public:
 	}
 
 	//Setter and Getter
-	SoloLinkedListNode<T>* getHead() 
+	BaseSoloLinkedListNode<T>* getHead()
 	{
 		return this->_head;
 	}
 
-	SoloLinkedListNode<T>* getTail() 
+	BaseSoloLinkedListNode<T>* getTail()
 	{
 		return this->_tail;
 	}
 
-	void setHead(SoloLinkedListNode<T>* head) override
+	void setHead(BaseSoloLinkedListNode<T>* head) override
 	{
 		this->_head = head;
 	}
 
-	void setTail(SoloLinkedListNode<T>* tail) override
+	void setTail(BaseSoloLinkedListNode<T>* tail) override
 	{
 		this->_tail = tail;
 	}
@@ -206,7 +206,7 @@ public:
 	//Methods
 	void print() override
 	{
-		SoloLinkedListNode<T>* current = this->_head;
+		BaseSoloLinkedListNode<T>* current = this->_head;
 		while (current != nullptr)
 		{
 			std::cout << current->getValue() << " ";

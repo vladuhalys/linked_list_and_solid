@@ -9,10 +9,10 @@ class BaseLinkedList abstract : public BaseAddingOperations<T>, public BaseRemov
 {
 public:
 	//Getters and setters
-	virtual void setHead(SoloLinkedListNode<T>* head) = 0;
-	virtual void setTail(SoloLinkedListNode<T>* tail) = 0;
-	virtual SoloLinkedListNode<T>* getHead() = 0;
-	virtual SoloLinkedListNode<T>* getTail() = 0;
+	virtual void setHead(BaseSoloLinkedListNode<T>* head) = 0;
+	virtual void setTail(BaseSoloLinkedListNode<T>* tail) = 0;
+	virtual BaseSoloLinkedListNode<T>* getHead() = 0;
+	virtual BaseSoloLinkedListNode<T>* getTail() = 0;
 
 	//Methods
 	virtual void print() = 0;

@@ -7,51 +7,22 @@
 template <typename T>
 class SoloLinkedListNode : public BaseSoloLinkedListNode<T>
 {
-private:
-	T _value;
-	SoloLinkedListNode<T>* _next = nullptr;
 public:
-	SoloLinkedListNode()
+	SoloLinkedListNode() : BaseSoloLinkedListNode<T>()
 	{
-		this->_value = T();
-		this->_next = nullptr;
 	}
-	SoloLinkedListNode(T value)
+	SoloLinkedListNode(T value) : BaseSoloLinkedListNode<T>(value)
 	{
-		this->_value = value;
-		this->_next = nullptr;
 	}
-	SoloLinkedListNode(T value, SoloLinkedListNode<T>* next)
+	SoloLinkedListNode(T value, SoloLinkedListNode<T>* next) : BaseSoloLinkedListNode<T>(value, next)
 	{
-		this->_value = value;
-		this->_next = next;
 	}
-	virtual ~SoloLinkedListNode()
+	~SoloLinkedListNode()
 	{
-		if (this->_next != nullptr)
+		if (this->getNext() != nullptr)
 		{
-			delete this->_next;
+			delete this->getNext();
 		}
-	}
-	T getValue() const override
-	{
-		return this->getValue();
-	}
-	void setValue(T value) override
-	{
-		this->setValue(value);
-	}
-	SoloLinkedListNode<T>* getNext() const override
-	{
-		return this->getNext();
-	}
-	void setNext(SoloLinkedListNode<T>* next)
-	{
-		this->setNext(next);
-	}
-	void print() const
-	{
-		std::cout << this->getValue() << std::endl;
 	}
 };
 

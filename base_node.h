@@ -5,7 +5,6 @@ template <typename T>
 class BaseNode abstract
 {
 public:
-	virtual ~BaseNode() = default;
 	virtual void setValue(T value) = 0;
 	virtual T getValue() const = 0;
 };
@@ -14,7 +13,6 @@ template <typename T>
 class INext abstract
 {	
 public:
-	virtual ~INext() = default;
 	virtual INext<T>* getNext() const = 0;
 	virtual void setNext(INext<T>* next) = 0;
 };

@@ -3,14 +3,14 @@
   <Class Name="SoloLinkedList&lt;T&gt;">
     <Position X="8.75" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>giQIACAAAABAwAAEAAEIAAAAAAAAAIAAAAEAAAAAAAA=</HashCode>
+      <HashCode>giQIACAAAABQwAAEAAEIAAAAAAAAAIAAAAEAAAABAAA=</HashCode>
       <FileName>solo_linked_list.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SoloLinkedListNode&lt;T&gt;">
     <Position X="11.5" Y="7" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAQAEBAAAAAAACAAAAIAAAAAAAAAAAAAIAACAAAAAAA=</HashCode>
+      <HashCode>ABQAEBAAAAAAACAAAAIAAAAAAAAAAAAgIAACAAAAAAA=</HashCode>
       <FileName>solo_linked_list_node.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -22,17 +22,10 @@
       <NewMemberFileName>base_node.h</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="INext&lt;T&gt;">
-    <Position X="16.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAACAAAAAAA=</HashCode>
-      <FileName>base_node.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="BaseLinkedList&lt;T&gt;">
     <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>giQIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>giQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>base_solo_linked_list.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -48,6 +41,13 @@
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAgAAEAAAIAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>base_operations.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="INext&lt;T&gt;">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAACAAAAAAA=</HashCode>
+      <FileName>base_node.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
