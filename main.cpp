@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 #include "solo_linked_list.h"
 
 int main()

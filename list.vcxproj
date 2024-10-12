@@ -133,8 +133,12 @@
     <ClInclude Include="base_node.h" />
     <ClInclude Include="base_operations.h" />
     <ClInclude Include="base_solo_linked_list.h" />
+    <ClInclude Include="base_solo_linked_list_node.h" />
     <ClInclude Include="solo_linked_list.h" />
     <ClInclude Include="solo_linked_list_node.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

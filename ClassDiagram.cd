@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SoloLinkedList&lt;T&gt;">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>giQIACAAAABAwAAEAAEIAAAAAAAAAIAAAAEAAAAAAAA=</HashCode>
+      <FileName>solo_linked_list.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoloLinkedListNode&lt;T&gt;">
+    <Position X="11.5" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAEBAAAAAAACAAAAIAAAAAAAAAAAAAIAACAAAAAAA=</HashCode>
+      <FileName>solo_linked_list_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseNode&lt;T&gt;">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBACAAAAAAAAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>base_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="INext&lt;T&gt;">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgIAACAACAAAA=</HashCode>
+      <FileName>base_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPrev&lt;T&gt;">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>base_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseLinkedList&lt;T&gt;">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>giQIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>base_solo_linked_list.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseAddingOperations&lt;T&gt;">
+    <Position X="8.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>base_operations.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseRemovingOperations&lt;T&gt;">
+    <Position X="10.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAAEAAAIAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>base_operations.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseSoloLinkedListNode&lt;T&gt;">
+    <Position X="11.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>base_solo_linked_list_node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -10,6 +10,9 @@
     <Filter Include="linked_list">
       <UniqueIdentifier>{7b3f385e-97d0-45b8-915d-46090ff3ca85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="diagrams">
+      <UniqueIdentifier>{68b035fd-aab1-44b5-b87a-3486df3e9e03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,5 +35,13 @@
     <ClInclude Include="solo_linked_list_node.h">
       <Filter>linked_list</Filter>
     </ClInclude>
+    <ClInclude Include="base_solo_linked_list_node.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>diagrams</Filter>
+    </None>
   </ItemGroup>
 </Project>

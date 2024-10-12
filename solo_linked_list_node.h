@@ -1,28 +1,8 @@
 #ifndef SOLO_NODE
 #define SOLO_NODE
 
-#include <iostream>
-using namespace std;
+#include "base_solo_linked_list_node.h"
 
-#include "base_node.h"
-
-template <typename T>
-class BaseSoloLinkedListNode : public BaseNode<T>, public INext<T>
-{
-public:
-	BaseSoloLinkedListNode() : BaseNode<T>(), INext<T>()
-	{}
-
-	virtual ~BaseSoloLinkedListNode()
-	{
-		if (this->_next != nullptr)
-		{
-			delete this->_next;
-		}
-	}
-	BaseSoloLinkedListNode(T value) : BaseNode<T>(value), INext<T>()
-	{}
-};
 
 template <typename T>
 class SoloLinkedListNode : public BaseSoloLinkedListNode<T>
@@ -34,15 +14,14 @@ public:
 	SoloLinkedListNode(T value) : BaseSoloLinkedListNode<T>(value)
 	{
 	}
-	virtual ~SoloLinkedListNode() {
-		if (this->getNext() != nullptr)
-		{
-			delete this->getNext();
-		}
+	SoloLinkedListNode(T value, SoloLinkedListNode<T>* next) : BaseSoloLinkedListNode<T>(value, next)
+	{
 	}
+	virtual ~SoloLinkedListNode()
+	{}
 	T getValue() const override
 	{
-		return this->_value;
+		return this->getValue();
 	}
 	void setValue(T value) override
 	{
@@ -58,7 +37,7 @@ public:
 	}
 	void print() const
 	{
-		std::cout << this->_value << std::endl;
+		std::cout << this->getValue() << std::endl;
 	}
 };
 
