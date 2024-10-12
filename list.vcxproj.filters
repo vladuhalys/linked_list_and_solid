@@ -4,11 +4,11 @@
     <Filter Include="main">
       <UniqueIdentifier>{c9c544d4-f2aa-4696-bcd2-ba6434ea34e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="list">
-      <UniqueIdentifier>{7b3f385e-97d0-45b8-915d-46090ff3ca85}</UniqueIdentifier>
-    </Filter>
     <Filter Include="interfaces">
       <UniqueIdentifier>{edb81332-c453-47cf-aee8-0140d50dc12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linked_list">
+      <UniqueIdentifier>{7b3f385e-97d0-45b8-915d-46090ff3ca85}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -17,8 +17,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="list.h">
-      <Filter>list</Filter>
+    <ClInclude Include="solo_linked_list.h">
+      <Filter>linked_list</Filter>
     </ClInclude>
     <ClInclude Include="base_node.h">
       <Filter>interfaces</Filter>
@@ -28,6 +28,9 @@
     </ClInclude>
     <ClInclude Include="base_operations.h">
       <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="solo_linked_list_node.h">
+      <Filter>linked_list</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

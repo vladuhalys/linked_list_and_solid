@@ -1,25 +1,24 @@
 #ifndef BASE_SOLO_LINKED_LIST
 #define BASE_SOLO_LINKED_LIST
 
-#include "base_node.h"
+#include "solo_linked_list_node.h"
 #include "base_operations.h"
 
 template <typename T>
 class BaseLinkedList abstract : public BaseAddingOperations<T>, public BaseRemovingOperations<T>
 {
 protected:
-	BaseNode<T>* head = nullptr;
-	BaseNode<T>* tail = nullptr;
+	BaseSoloLinkedListNode<T>* _head = nullptr;
+	BaseSoloLinkedListNode<T>* _tail = nullptr;
 public:
-	//Constructors and destructors
-	BaseLinkedList() = default;
-	virtual ~BaseLinkedList() = default;
-
 	//Getters and setters
-	void setHead(BaseNode<T>* head) = 0;
-	void setTail(BaseNode<T>* tail) = 0;
-	BaseNode<T>* getHead() = 0;
-	BaseNode<T>* getTail() = 0;
+	virtual void setHead(BaseSoloLinkedListNode<T>* head) = 0;
+	virtual void setTail(BaseSoloLinkedListNode<T>* tail) = 0;
+	virtual BaseSoloLinkedListNode<T>* getHead() = 0;
+	virtual BaseSoloLinkedListNode<T>* getTail() = 0;
+
+	//Methods
+	virtual void print() = 0;
 };
 
 #endif
