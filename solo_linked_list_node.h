@@ -7,18 +7,32 @@
 template <typename T>
 class SoloLinkedListNode : public BaseSoloLinkedListNode<T>
 {
+private:
+	T _value;
+	SoloLinkedListNode<T>* _next = nullptr;
 public:
-	SoloLinkedListNode() : BaseSoloLinkedListNode<T>()
+	SoloLinkedListNode()
 	{
+		this->_value = T();
+		this->_next = nullptr;
 	}
-	SoloLinkedListNode(T value) : BaseSoloLinkedListNode<T>(value)
+	SoloLinkedListNode(T value)
 	{
+		this->_value = value;
+		this->_next = nullptr;
 	}
-	SoloLinkedListNode(T value, SoloLinkedListNode<T>* next) : BaseSoloLinkedListNode<T>(value, next)
+	SoloLinkedListNode(T value, SoloLinkedListNode<T>* next)
 	{
+		this->_value = value;
+		this->_next = next;
 	}
 	virtual ~SoloLinkedListNode()
-	{}
+	{
+		if (this->_next != nullptr)
+		{
+			delete this->_next;
+		}
+	}
 	T getValue() const override
 	{
 		return this->getValue();
@@ -27,11 +41,11 @@ public:
 	{
 		this->setValue(value);
 	}
-	BaseSoloLinkedListNode<T>* getNext() const override
+	SoloLinkedListNode<T>* getNext() const override
 	{
 		return this->getNext();
 	}
-	void setNext(BaseSoloLinkedListNode<T>* next)
+	void setNext(SoloLinkedListNode<T>* next)
 	{
 		this->setNext(next);
 	}
